@@ -1,0 +1,44 @@
+.page-products-products {
+
+    // 1 уровень products
+    .cat-children {
+        &>.card {
+            @extend .border-0;
+            filter: grayscale(100%);
+
+            @include hover-focus-active {
+                filter: grayscale(0);
+                transform: scale(0.9);
+                @include transition($transition-main);
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            img {
+                width: 100%;
+            }
+        }
+
+        .page-header {
+            &-title {
+                @extend .btn;
+                @extend .btn-dark;
+                font-size: $font-size-base;
+                @extend .mb-0;
+                @extend .align-self-center;
+                @extend .border-0;
+            }
+
+            &-alt {
+                @extend .btn;
+                @extend .btn-secondary;
+                font-size: $font-size-sm;
+                background-color: rgba($dark, .7) !important;
+                @extend .border-0;
+                @extend .shadow;
+                @extend .w-100;
+            }
+        }
+
+    }
+}

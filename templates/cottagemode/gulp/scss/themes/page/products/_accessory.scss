@@ -1,0 +1,77 @@
+.item-page-products {
+    .item-body-section {
+        @extend .align-items-center;
+    }
+
+    .accessory {
+        &-card {
+            @extend .card;
+            @extend .border-0;
+            @extend .col-lg-6;
+            @extend .mb-4;
+
+        }
+
+        &-row {
+            @extend .row;
+            @extend .no-gutters;
+            @extend .flex-nowrap;
+            @extend .align-items-center;
+
+            .col-img {
+                @extend .col-auto;
+
+                @include hover-focus-active {
+                    @extend .fal;
+                    @extend .fa-search-plus;
+                    @extend .text-decoration-none;
+
+                    &:before {
+                        @extend .bg-absolute;
+                        @extend .d-flex;
+                        @extend .justify-content-center;
+                        @extend .align-items-center;
+                        @extend .display-2;
+                        @extend .text-white;
+                        background-color: $popover-border-color;
+                    }
+                }
+            }
+
+            .col-table {
+                @extend .col-9;
+            }
+        }
+
+        &-img {
+            @extend .card-img;
+        }
+
+        &-table {
+            @extend .table-sm;
+            @extend .table-responsive-lg;
+
+            tr {
+                td {
+                    @extend .border-left;
+                }
+
+                &:first-child {
+                    td {
+
+                        border-top-color: transparent !important;
+                    }
+                }
+            }
+
+
+            td {
+                @extend .text-left;
+                border-left-color: initial !important;
+            }
+
+        }
+
+
+    }
+}

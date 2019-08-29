@@ -1,0 +1,14 @@
+.articles-m {
+    @extend .list-unstyled;
+
+    dt {
+        @extend .mr-3;
+        @extend .font-weight-normal;
+        line-height: $line-height-sm;
+    }
+
+    dd {
+        line-height: $line-height-sm;
+        @extend .mb-0;
+    }
+}

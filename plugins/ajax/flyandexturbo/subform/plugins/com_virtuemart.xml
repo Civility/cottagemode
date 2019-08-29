@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="Virtuemart">
+        <field name="enable" type="flpayment"
+            component="VirtueMart" />
+    </fieldset>
+</form>

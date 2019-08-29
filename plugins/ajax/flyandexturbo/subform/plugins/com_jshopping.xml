@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="JShopping">
+        <field name="enable" type="flpayment"
+            component="JoomShopping" />
+    </fieldset>
+</form>

@@ -1,0 +1,93 @@
+.mod-modal {
+	@extend .position-fixed;
+	z-index: $zindex-popover;
+
+	.btn-modal {
+		@extend .p-0;
+		@extend .d-flex;
+		@extend .justify-content-start;
+		@extend .align-items-center;
+		width: 15rem;
+		opacity: 0.85;
+
+		@include hover-focus-active {
+			opacity: 1;
+		}
+
+		&-link {
+			@extend .p-1;
+			@extend .position-relative;
+		}
+
+		.icon {
+			@extend .fal;
+			@extend .p-3;
+			font-size: 2.5em;
+
+			@extend .float-left;
+
+			@include media-breakpoint-down(md) {
+				font-size: 1.5em;
+			}
+		}
+
+		@extend .position-fixed;
+		right: 0;
+		top: 0;
+		@extend .btn-primary;
+		@include transition($transition-main);
+
+		.page-header {
+			font-size: 1rem;
+			@extend .mb-0;
+			@extend .text-white;
+			@extend .font-weight-normal;
+			z-index: 999;
+			@extend .stretched-link;
+		}
+
+		&:active,
+		&:focus {
+			right: 0;
+		}
+
+	}
+}
+
+.mod-commenting {
+	.btn-modal {
+		top: 30%;
+		right: -11rem;
+
+		@include media-breakpoint-down(md) {
+			right: -11.5rem;
+
+			@include hover-focus-active {
+				right: 0;
+			}
+		}
+	}
+
+	&-icon {
+		@extend .fa-comment-dots;
+	}
+}
+
+.mod-question {
+	.btn-modal {
+		top: 40%;
+		right: -11rem;
+
+		@include media-breakpoint-down(md) {
+			right: -11.5em;
+
+			@include hover-focus-active {
+				right: 0;
+			}
+		}
+	}
+
+	&-icon {
+		@extend .fa-question-circle;
+	}
+}

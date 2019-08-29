@@ -1,0 +1,21 @@
+// .module-panel {
+.slick-slider {
+    .image {
+        @extend .w-100;
+        @extend .m-0;
+    }
+
+    &:hover {
+
+        .slick-prev,
+        .slick-next {
+            &:before {
+                @extend .d-block;
+                @include transition($transition-main);
+            }
+        }
+    }
+
+}
+
+// }

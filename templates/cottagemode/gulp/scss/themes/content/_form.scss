@@ -1,0 +1,22 @@
+.miForm {
+    .control-label {
+        @extend .float-left;
+    }
+    input[type="checkbox"] {
+        width: 1.5rem;
+        height: 1.5rem;
+        -ms-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+    .rsform-block-personaldata {
+        @extend .d-flex;
+        .control-label {
+            @extend .order-1;
+        }
+    }
+    .rsform-submit-button {
+        @extend .btn-lg;
+        @extend .btn-block;
+    }
+}

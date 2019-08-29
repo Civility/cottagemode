@@ -1,0 +1,46 @@
+.pagination {
+	@extend .border-0;
+	@extend .justify-content-center;
+	@extend .align-items-center;
+  	.page-item {
+  		&.disabled {
+  			background-color: rgba($black, 0.1);
+  			.page-link {
+  				background-color: transparent;
+  			}
+  			.fa {
+  				color: inherit;
+  			}
+  		}
+  	}
+    .page-link {
+		@extend .btn;
+		@extend .btn-outline-primary;
+  		&:first-child {
+			@extend .border-0;
+  		}
+  	}
+
+	ul {
+		@extend .border-0;
+		@extend .m-auto;
+		& > .page-item {
+			.page-link {
+				@extend .border;
+				@extend .border-primary;
+				&:hover, &:active, &:focus {
+					@extend .bg-primary;
+					.fa {
+						@extend	.text-white;
+					}
+				}
+			}
+			.fa {
+				@extend .text-primary;
+				@extend .font-weight-normal;
+				@include transition($transition-base);
+				@extend .p-2;
+			}
+		}
+	}
+ }

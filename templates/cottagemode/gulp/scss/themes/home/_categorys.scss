@@ -1,0 +1,61 @@
+.categories-list-home {
+	// 1 уровень HOME
+	@extend .mb-3;
+
+	// @include media-breakpoint-down(lg) {
+	//     .card-link {
+	//         z-index: -1;
+	//     }
+
+	//     @include hover-focus-active {
+	//         .card-link {
+	//             z-index: 1;
+	//         }
+	//     }
+	// }
+
+	.card {
+		@extend .border-0;
+
+		&-link {
+			@extend .link;
+		}
+
+		&-img {
+			@include transition($transition-main);
+		}
+
+		@include hover-focus-active {
+			.page-header {
+				transform: scaleY(-1);
+				@include transition($transition-main);
+				background-color: $dark;
+
+				&-title {
+					display: none !important;
+				}
+
+				&-alt {
+					display: block !important;
+				}
+			}
+
+			.card-img {
+				transform: scaleY(-1);
+				@include transition($transition-main);
+			}
+		}
+
+		.page-header {
+			&-title {
+				@extend .d-block;
+			}
+
+			&-alt {
+				@extend .d-none;
+				transform: scaleY(-1);
+				@include transition($transition-main);
+			}
+		}
+	}
+}

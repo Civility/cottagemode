@@ -1,0 +1,33 @@
+// @font-face {
+// 	font-family: 'Source Sans Pro';
+// 	src: local('SourceSansPro-Light'), local('Source Sans Pro'),
+// 		url('../fonts/SourceSansPro/SourceSansPro-Light.eot'),
+// 		url('../fonts/SourceSansPro/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'),
+// 		url('../fonts/SourceSansPro/SourceSansPro-Light.woff') format('woff'),
+// 		url('../fonts/SourceSansPro/SourceSansPro-Light.ttf') format('truetype');
+// 	font-weight: 300;
+// 	font-style: normal;
+// }
+
+@font-face {
+	font-display: swap;
+	font-family: 'Source Sans Pro';
+	src: local('SourceSansPro-Light'), local('Source Sans Pro'),
+		url('../fonts/SourceSansPro/SourceSansPro-Light.eot'),
+		url('../fonts/SourceSansPro/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SourceSansPro/SourceSansPro-Light.woff') format('woff'),
+		url('../fonts/SourceSansPro/SourceSansPro-Light.woff2') format('woff2'),
+		url('../fonts/SourceSansPro/SourceSansPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+// @font-face {
+// 	font-family: 'Source Sans Pro';
+// 	src: local('SourceSansPro-Regular'), local('Source Sans Pro'),
+// 		url('../fonts/SourceSansPro/SourceSansPro-Regular.eot'),
+//         url('../fonts/SourceSansPro/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/SourceSansPro/SourceSansPro-Regular.woff') format('woff'),
+//         url('../fonts/SourceSansPro/SourceSansPro-Regular.ttf') format('truetype');
+// 		font-style: normal;
+// }

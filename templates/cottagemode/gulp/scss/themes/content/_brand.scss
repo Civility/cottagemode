@@ -1,0 +1,8 @@
+.brand {
+	@extend .text-center;
+	@extend .col;
+
+	.image {
+		@extend .bg-dark;
+	}
+}

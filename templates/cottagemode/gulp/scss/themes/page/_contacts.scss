@@ -1,0 +1,15 @@
+.page-question {
+    .question {
+        @extend .mr-auto;
+
+        form>h2 {
+            @extend .d-none;
+        }
+    }
+}
+
+.page-contacts {
+    .dealer {
+        @extend .mr-auto;
+    }
+}
